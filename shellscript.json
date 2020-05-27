@@ -1,0 +1,106 @@
+{
+	"Add shebang": {
+		"prefix": "shebang",
+		"body": [
+			"#!/bin/bash"
+		],
+		"description": "Adds shebang to script"
+	}
+
+	"Add user data": {
+		"prefix": "user",
+		"body": [
+			"read -p <text>: var",
+		],
+		"description": "User input data"
+	}
+
+	"Add echo command": {
+		"prefix": "echo",
+		"body": [
+			"echo var",
+		],
+		"description": "Input data"
+	}
+
+	"Add case statement": {
+		"prefix": "case",
+  		"body": [
+  			"case <EXPRESSION> in",
+	   			"PATTERN_1)",
+	   				"Action if match>",
+					";;",
+				"PATTERN_2)",
+	   				"Action if match>",
+				 	";;",
+				"PATTERN_N)",
+	   				"Action if match>",
+	   				";;",
+				"*)",
+					"Invalid entry.",
+					";;",	
+			"esac",
+   				],
+		"description": "Add case statement structure"
+	}
+
+	"Create an if-then-else statement ": {
+		"prefix": "if",
+		"body": [
+			"if <condition>",
+			"then",
+				"<action1>",
+			"else",
+				"<action2>",
+			"fi",
+			],
+		"description": "Add an if-then-else statement"
+	}
+
+	"Create a while-do statement ": {
+		"prefix": "while",
+		"body": [	
+			"while <condition>",
+			"do",
+				"<action>",
+			"done",
+		],
+		"description": "Add a while-do statement"
+	}
+
+	"Create a for-loop statement ": {
+		"prefix": "for",
+		"body": [	
+			"for var in par1 par2 par3",
+			"do",
+				"<action>",
+			"done",
+		],
+		"description": "Add a for-do statement"
+	}
+
+	"Create arithmetic operations": {
+		"prefix": "arithmetic",
+		"body": [	
+	    	"Addition = ((var1+var2))",
+			"Subtraction = ((var1-var2))",
+			"Multiplication = ((var1*var2))",
+			"Division = ((var1/var2))}",
+		],
+		"description": "Add arithmetic operations"
+    }
+
+	"Create color codes": {
+    	"prefix": "colors",
+    	"body": [	
+    		"Blue='\033\e[34m ' ",
+    		"LGreen='\033\e[92m ' ",
+    		"Red='\033\e[31m'",
+    		"Yellow='\033\e[33m'",
+   			"LCyan='\033\e[96m'",
+			"White='\033\e[97m'",
+			"echo -e $<color>",
+	    ],
+    	"description": "Add colors"
+	}
+}
