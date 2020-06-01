@@ -11,3 +11,10 @@ while (( "$#" )); do
   echo "FRUIT: $1" 
   shift 
 done
+
+##for for loop
+#array_fruit=("apple","mango","strawberry","orange","banana")
+##repeat printing fruit with array
+#for fruit in ${array_fruit[@]}; do
+#echo "FRUIT: $fruit"
+#done

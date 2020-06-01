@@ -10,5 +10,5 @@ do
         exit 0
     fi
     read -p "Type the location where you want to download the file: " storage
-    wget $ans -P ../portfolio/$storage
+    wget $ans -P ../$storage
 done

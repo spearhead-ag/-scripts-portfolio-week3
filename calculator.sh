@@ -30,6 +30,9 @@ case $choice in
   3)ans=$(($num1 * $num2)) 
   ;; 
   4)ans=$(($num1 / $num2)) 
-  ;; 
+  ;;
+  *)
+  echo "Invalid entry."
+  ;;
 esac
 echo "The answer is : $ans"

@@ -1,10 +1,10 @@
-# ================================== #
-# This script runs a case statement  #
-# ================================== #
+# ============================================================== #
+# This script runs multiple scripts when input password is valid #
+# ============================================================== #
 #!/bin/bash
 #set -x
 
-#color codes
+#set color codes
 Blue='\033\e[34m'
 LGreen='\033\e[92m'
 Red='\033\e[31m'
@@ -12,9 +12,11 @@ Yellow='\033\e[33m'
 LCyan='\033\e[96m'
 White='\033\e[97m'
 
-#=====================================
+#inputs password and saved in "result" file
 file="./result"
 bash ~/scripts/portfolio/week2/passwordCheck.sh > result
+
+#validates password by reading "result" file line by line
 while IFS= read -r line; do
     if [[ "$line" == "Access Granted" ]]; then
         pass="Access Granted"
@@ -23,7 +25,7 @@ while IFS= read -r line; do
     fi
 done <"$file"
 
-#performs actions if access granted
+#performs corresponding scripts if granted access
 if [ "$pass" == "Access Granted" ]; then
     while true
     do
