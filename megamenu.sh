@@ -14,14 +14,14 @@ White='\033\e[97m'
 
 #inputs password and saved in "result" file
 file="./result"
-bash ~/scripts/portfolio/week2/passwordCheck.sh > result
+bash /home/kali/scripts/portfolio/week2/passwordCheck.sh > result
 
 #validates password by reading "result" file line by line
 while IFS= read -r line; do
-    if [[ "$line" == "Access Granted" ]]; then
+   if [[ "$line" == "Access Granted" ]]; then
         pass="Access Granted"
         echo $'\n'
-        echo -e "${LGreen}$pass"
+       echo -e "${LGreen}$pass"
     fi
 done <"$file"
 
@@ -78,3 +78,5 @@ else
     echo -e "${Red}"$pass
     exit 1
 fi
+
+read -t 5 -p " "
